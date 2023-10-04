@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Product Search Engine</title>
+</head>
+
+<body>
+    <section class="container">
+        <form>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="search-item" placeholder="Search Products Here" onkeyup="search()">
+        </form>
+
+        <div class="product-list" id="productList">
+            <div class="product">
+                <img src="images/t1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>T-shirt For Everyone</h2>
+                    <h3>90 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/shoes1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Sporty Running Shoes</h2>
+                    <h3>120 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/jacket1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Stylish Leather Jacket</h2>
+                    <h3>250 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/jeans1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Slim Fit Jeans</h2>
+                    <h3>80 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/sunglasses1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Designer Sunglasses</h2>
+                    <h3>50 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/watch1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Luxury Wrist Watch</h2>
+                    <h3>350 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/handbag1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Chic Leather Handbag</h2>
+                    <h3>180 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/sneakers1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Classic Canvas Sneakers</h2>
+                    <h3>65 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/dress1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Elegant Evening Dress</h2>
+                    <h3>180 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/hat1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Stylish Fedora Hat</h2>
+                    <h3>30 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/backpack1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Travel Backpack</h2>
+                    <h3>95 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/sweater1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Cozy Knit Sweater</h2>
+                    <h3>70 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/headphones1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Wireless Headphones</h2>
+                    <h3>150 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/smartphone1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Smartphone with 5G</h2>
+                    <h3>500 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/backpack2.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Hiking Backpack</h2>
+                    <h3>120 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/dress2.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Floral Sundress</h2>
+                    <h3>75 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/wallet1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Leather Wallet</h2>
+                    <h3>40 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/earrings1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Crystal Stud Earrings</h2>
+                    <h3>25 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/sneakers2.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>High-Top Sneakers</h2>
+                    <h3>80 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/skirt1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Denim Mini Skirt</h2>
+                    <h3>45 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/skirt2.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Denim Mini Skirt & Top</h2>
+                    <h3>45 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/backpack3.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Canvas Travel Backpack</h2>
+                    <h3>90 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/watch2.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Classic Analog Watch</h2>
+                    <h3>60 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/tie1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Silk Necktie</h2>
+                    <h3>35 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/handbag2.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Luxury Handbag</h2>
+                    <h3>220 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/hoodie1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Cozy Hooded Sweatshirt</h2>
+                    <h3>70 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/scarf1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>Warm Winter Scarf</h2>
+                    <h3>30 ₹</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/laptop1.jpg" alt="">
+                <div class="ProductDetails">
+                    <h2>15-inch Laptop</h2>
+                    <h3>800 ₹</h3>
+                </div>
+            </div>
+            <!-- Add more unique products with names and prices here -->
+            
+            <!-- Add more unique products with names and prices here -->
+
+        </div>
+    </section>
+</body>
+
+</html>
